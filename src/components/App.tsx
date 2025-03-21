@@ -8,7 +8,7 @@ function App() {
   return (
     <>
      <header>
-      <h1 className='text-6xl text-center'>Felipe77CV</h1>
+      <h1 className=''>Felipe77CV</h1>
 
      </header>
     </>

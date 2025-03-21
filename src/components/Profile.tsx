@@ -6,7 +6,7 @@ function Profile() {
         <header className="bg-[#121212]">
             <div>
                 <div>
-                <span className="text-6xl">@ <span>Home</span></span>
+                <span className="underline text-6xl">@ <span>Home</span></span>
                 </div>
                 <div>
                     <menu>
