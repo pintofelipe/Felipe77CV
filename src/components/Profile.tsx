@@ -1,10 +1,10 @@
 import imgPrincipal from "../assets/fonts/img-principal.jpg";
 
-function Profile() {
+const Profile = () => {
   return (
     <>
-      <header className="bg-stone-300 max-w-6xl mx-auto">
-        <div className="flex  justify-between h-30 max-w-6xl mx-auto">
+      <header className="bg-stone-300 ">
+        <div className="flex  justify-between h-30">
           <div className="bg-blue-500 flex px-10">
             <span className="flex text-6xl place-items-center">
               <svg
@@ -26,7 +26,7 @@ function Profile() {
               <span className="text-3xl font-semibold text-white">Home</span>
             </span>
           </div>
-          <div className="flex bg-purple-950 mr-15">
+          <div className="flex bg-purple-950">
             <menu className="flex">
               <ul className="flex items-center justify-end text-white">
                 <li className="place-content-center p-2 rounded-2xl text-2xl mx-1 ">
@@ -53,7 +53,7 @@ function Profile() {
         </div>
 
         <div
-          className="h-177 bg-amber-400 grid grid-cols-2"
+          className="h-177 bg-amber-400 grid grid-cols-2 max-w-6xl mx-auto"
           style={{
             backgroundImage: `url(${imgPrincipal})`,
             backgroundSize: "cover",
@@ -126,7 +126,7 @@ function Profile() {
                 es dar soluciones a problemas de la vida cotidiana, por medio de
                 la técnología, es por esto que Estoy estudiando Ingeniería de
                 Sistemas, en areas de la programación cómo es el Desarrollo web
-                en fron-end me gusta tambien el manejo otros lenguajes de
+                en front-end me gusta tambien el manejo otros lenguajes de
                 programación como lo son JavaScript, Python, Java, C++ y kotlin
                 me gusta aprender y trabajar en equipo buscando siempre un
                 objetivo común me gusta el liderazgo.
