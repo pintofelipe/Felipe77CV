@@ -4,7 +4,7 @@ const Profile = () => {
   return (
     <>
       <header className="bg-stone-300 ">
-        <div className="flex  justify-between h-30">
+        <div className="flex  justify-between h-20">
           <div className="bg-blue-500 flex px-10">
             <span className="flex text-6xl place-items-center">
               <svg
@@ -126,7 +126,7 @@ const Profile = () => {
                 es dar soluciones a problemas de la vida cotidiana, por medio de
                 la técnología, es por esto que Estoy estudiando Ingeniería de
                 Sistemas, en areas de la programación cómo es el Desarrollo web
-                en front-end me gusta tambien el manejo otros lenguajes de
+                en front-end, me gusta tambien el manejo otros lenguajes de
                 programación como lo son JavaScript, Python, Java, C++ y kotlin
                 me gusta aprender y trabajar en equipo buscando siempre un
                 objetivo común me gusta el liderazgo.
