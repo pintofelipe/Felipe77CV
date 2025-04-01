@@ -192,6 +192,42 @@ const Certificate = () => {
             <a href="src\assets\certificates\js-movistar.jpg">Ver certificado</a>
           </div>
 
+          <div className="bg-amber-500">
+            <img src="src\assets\certificates\fun-kotlin-meta.jpg" alt="Imagen de Certificado" />
+            <h3>Fundamentos de Kotlin</h3>
+            <h4>Meta - 2024</h4>
+            <a href="src\assets\certificates\fun-kotlin-meta.jpg">Ver certificado</a>
+          </div>
+
+          <div className="bg-amber-500">
+            <img src="src\assets\certificates\resolver-problem.jpg" alt="Imagen de Certificado" />
+            <h3>Cómo resolver problemas y tomar decisiones</h3>
+            <h4>Universidad de California - 2024</h4>
+            <a href="src\assets\certificates\resolver-problem.jpg">Ver certificado</a>
+          </div>
+
+          <div className="bg-amber-500">
+            <img src="src\assets\certificates\diploma-jetpack-android.jpg" alt="Imagen de Certificado" />
+            <h3>Jetpack Compose En Android</h3>
+            <h4>Platzi - 2024</h4>
+            <a href="src\assets\certificates\diploma-jetpack-android.jpg">Ver certificado</a>
+          </div>
+
+
+          <div className="bg-amber-500">
+            <img src="src\assets\certificates\bootcamp-programing.jpg" alt="Imagen de Certificado" />
+            <h3>Bootcamp de programación</h3>
+            <h4>Talento Tech - 2024</h4>
+            <a href="src\assets\certificates\bootcamp-programing.jpg">Ver certificado</a>
+          </div>
+
+
+          <div className="bg-amber-500">
+            <img src="src\assets\certificates\diploma-dbsql.jpg" alt="Imagen de Certificado" />
+            <h3>Base de datos con SQL</h3>
+            <h4>Platzi - 2025</h4>
+            <a href="src\assets\certificates\diploma-dbsql.jpg">Ver certificado</a>
+          </div>
 
 
         </div>
