@@ -49,7 +49,7 @@ const Profile = () => {
             <p className="mt-5 text-sm text-[#E2E8F0]/70 leading-relaxed">
               Me llamo Andrey Felipe Pinto Uribe, Tengo 20 años y me interesa la política, leyes, noticias, deportes como natación, fútbol y ajedrez. Me apasiona la tecnología y la programación, especialmente en el desarrollo web y lenguajes como JavaScript, Python, Java, C++ y Kotlin.
             </p>
-            <button className="mt-5 bg-[#3B82F6] hover:bg-[#2563EB] text-white font-bold py-2 px-5 rounded-lg transition duration-300">
+            <button className="mt-5 bg-[#3B82F6] hover:bg-[#2563EB] text-white font-bold py-2 px-5 rounded-lg transition duration-300 hover:cursor-pointer">
               Ver Perfil
             </button>
           </div>

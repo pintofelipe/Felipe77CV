@@ -1,239 +1,201 @@
 const Certificate = () => {
+  const certificates = [
+    {
+      img: "src/assets/certificates/egg.jpg",
+      title: "Programación desde cero",
+      issuer: "egg - 2022",
+      link: "src/assets/certificates/egg.jpg",
+    },
+    {
+      img: "src/assets/certificates/analytics.jpg",
+      title: "Análitica de datos",
+      issuer: "DS4A-Colombia - 2022",
+      link: "src/assets/certificates/analytics.jpg",
+    },
+    {
+      img: "src/assets/certificates/sena-inventarios.jpg",
+      title: "Administración de Inventarios",
+      issuer: "SENA - 2022",
+      link: "src/assets/certificates/sena-inventarios.jpg",
+    },
+    {
+      img: "src/assets/certificates/sena-inventor.jpg",
+      title: "App Inventor",
+      issuer: "Desarrollo APP Inventor - 2022",
+      link: "src/assets/certificates/sena-inventor.jpg",
+    },
+    {
+      img: "src/assets/certificates/sena-python.jpg",
+      title: "Python",
+      issuer: "SENA - 2022",
+      link: "src/assets/certificates/sena-python.jpg",
+    },
+    {
+      img: "src/assets/certificates/uis-python.jpg",
+      title: "Fundamentos de python",
+      issuer: "UIS - 2022",
+      link: "src/assets/certificates/uis-python.jpg",
+    },
+    {
+      img: "src/assets/certificates/uis-java.jpg",
+      title: "Programación en Java",
+      issuer: "UIS - 2022",
+      link: "src/assets/certificates/uis-java.jpg",
+    },
+    {
+      img: "src/assets/certificates/uis-software.jpg",
+      title: "Desarrollo de Software",
+      issuer: "UIS - 2022",
+      link: "src/assets/certificates/uis-software.jpg",
+    },
+    {
+      img: "src/assets/certificates/uis-movil.jpg",
+      title: "Desarrollo de App móvil",
+      issuer: "UIS - 2022",
+      link: "src/assets/certificates/uis-movil.jpg",
+    },
+    {
+      img: "src/assets/certificates/uis-diploma.jpg",
+      title: "Diplomado de Programación",
+      issuer: "UIS - 2022",
+      link: "src/assets/certificates/uis-diploma.jpg",
+    },
+    {
+      img: "src/assets/certificates/desarrolloweb.jpg",
+      title: "Desarrollo web",
+      issuer: "Código Facilito - 2023",
+      link: "src/assets/certificates/desarrolloweb.jpg",
+    },
+    {
+      img: "src/assets/certificates/git.jpg",
+      title: "Curso profesional de Git",
+      issuer: "Código Facilito - 2023",
+      link: "src/assets/certificates/git.jpg",
+    },
+    {
+      img: "src/assets/certificates/github.jpg",
+      title: "Curso A fondo de GitHub",
+      issuer: "Código Facilito - 2023",
+      link: "src/assets/certificates/git.jpg",
+    },
+    {
+      img: "src/assets/certificates/baseDatos.jpg",
+      title: "Curso Profesional de Base de datos",
+      issuer: "Código Facilito - 2023",
+      link: "src/assets/certificates/baseDatos.jpg",
+    },
+    {
+      img: "src/assets/certificates/java-facilito.jpg",
+      title: "Curso Profesional de Java",
+      issuer: "Código Facilito - 2023",
+      link: "src/assets/certificates/java-facilito.jpg",
+    },
+    {
+      img: "src/assets/certificates/introProgra.jpg",
+      title: "Introducción a la Programación",
+      issuer: "Fundación Telefonica Movistar - 2023",
+      link: "src/assets/certificates/introProgra.jpg",
+    },
+    {
+      img: "src/assets/certificates/class-mirror1.jpg",
+      title: "Clase espejo Interistitucional",
+      issuer: "Universidades - 2023",
+      link: "src/assets/certificates/class-mirror1.jpg",
+    },
+    {
+      img: "src/assets/certificates/class-mirror2.jpg",
+      title: "Clase espejo Interistitucional",
+      issuer: "Universidades - 2023",
+      link: "src/assets/certificates/class-mirror2.jpg",
+    },
+    {
+      img: "src/assets/certificates/java-script-facilito.jpg",
+      title: "Curso Profesional de JavaScript",
+      issuer: "Código Facilito - 2023",
+      link: "src/assets/certificates/java-script-facilito.jpg",
+    },
+    {
+      img: "src/assets/certificates/office-basic.jpg",
+      title: "Office Básico",
+      issuer: "Fundación Telefonica Movistar - 2023",
+      link: "src/assets/certificates/office-basic.jpg",
+    },
+    {
+      img: "src/assets/certificates/java-script-dom.jpg",
+      title: "JavaScript y el DOM",
+      issuer: "Código Facilito - 2023",
+      link: "src/assets/certificates/java-script-dom.jpg",
+    },
+    {
+      img: "src/assets/certificates/js-movistar.jpg",
+      title: "Programación con JavaScript",
+      issuer: "Fundación Telefonica Movistar - 2023",
+      link: "src/assets/certificates/js-movistar.jpg",
+    },
+    {
+      img: "src/assets/certificates/fun-kotlin-meta.jpg",
+      title: "Fundamentos de Kotlin",
+      issuer: "Meta - 2024",
+      link: "src/assets/certificates/fun-kotlin-meta.jpg",
+    },
+    {
+      img: "src/assets/certificates/resolver-problem.jpg",
+      title: "Cómo resolver problemas y tomar decisiones",
+      issuer: "Universidad de California - 2024",
+      link: "src/assets/certificates/resolver-problem.jpg",
+    },
+    {
+      img: "src/assets/certificates/diploma-jetpack-android.jpg",
+      title: "Jetpack Compose En Android",
+      issuer: "Platzi - 2024",
+      link: "src/assets/certificates/diploma-jetpack-android.jpg",
+    },
+    {
+      img: "src/assets/certificates/bootcamp-programing.jpg",
+      title: "Bootcamp de programación",
+      issuer: "Talento Tech - 2024",
+      link: "src/assets/certificates/bootcamp-programing.jpg",
+    },
+    {
+      img: "src/assets/certificates/diploma-dbsql.jpg",
+      title: "Base de datos con SQL",
+      issuer: "Platzi - 2025",
+      link: "src/assets/certificates/diploma-dbsql.jpg",
+    },
+  ];
+
   return (
-    <>
-      <div className="max-w-6xl mx-auto mt-10">
-        <h1 className="text-center text-3xl font-semibold mb-5">
-          CERTIFICADOS
-          </h1>
-        <div className="grid grid-cols-4 gap-4 bg-amber-100 text-center p-2">
-
-        
-        <div className="bg-amber-500">
-            <img src="src\assets\certificates\egg.jpg" alt="Imagen de Certificado" />
-            <h3>Programación desde cero</h3>
-            <h4>egg - 2022</h4>
-            <a href="src\assets\certificates\egg.jpg">Ver certificado</a>
+    <div className="max-w-6xl mx-auto mt-10">
+      <h1 className="text-center text-4xl font-bold mb-8 text-white bg-gradient-to-r from-[#4C6B9D] to-[#2C3A58] py-3 rounded-lg shadow-xl">
+        CERTIFICADOS
+      </h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 bg-gray-200 p-5 rounded-lg shadow-lg">
+        {certificates.map((cert, index) => (
+          <div
+            key={index}
+            className="bg-white rounded-lg shadow-lg p-3 text-center border border-gray-300 transition transform hover:scale-105 hover:bg-[#2C3A58] hover:bg-opacity-90 hover:text-white"
+          >
+            <img
+              src={cert.img}
+              alt={`Certificado de ${cert.title}`}
+              className="w-full h-40 object-cover rounded-md"
+            />
+            <h3 className="font-semibold mt-2 text-gray-900 hover:text-white">{cert.title}</h3>
+            <h4 className="text-sm text-gray-600 hover:text-white">{cert.issuer}</h4>
+            <a
+              href={cert.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:text-blue-800 underline mt-2 inline-block"
+            >
+              Ver certificado
+            </a>
           </div>
-
-
-          <div className="bg-amber-500">
-            <img src="src\assets\certificates\analytics.jpg" alt="Imagen de Certificado" />
-            <h3>Análitica de datos</h3>
-            <h4>DS4A-Colombia - 2022</h4>
-            <a href="src\assets\certificates\analytics.jpg">Ver certificado</a>
-          </div>
-         
-         
-
-          <div className="bg-amber-500">
-            <img src="src\assets\certificates\sena-inventarios.jpg" alt="Imagen de Certificado" />
-            <h3>Administración de Inventarios</h3>
-            <h4>SENA - 2022</h4>
-            <a href="src\assets\certificates\sena-inventarios.jpg">Ver certificado</a>
-          </div>
-
-
-
-          <div className="bg-amber-500">
-            <img src="src\assets\certificates\sena-inventor.jpg" alt="Imagen de Certificado" />
-            <h3>App Inventor</h3>
-            <h4>Desarrollo APP Inventor - 2022</h4>
-            <a href="src\assets\certificates\sena-inventor.jpg">Ver certificado</a>
-          </div>
-
-
-          
-          <div className="bg-amber-500">
-            <img src="src\assets\certificates\sena-python.jpg" alt="Imagen de Certificado" />
-            <h3>Python</h3>
-            <h4>SENA - 2022</h4>
-            <a href="src\assets\certificates\sena-python.jpg">Ver certificado</a>
-          </div>
-
-          
-          <div className="bg-amber-500">
-            <img src="src\assets\certificates\uis-python.jpg" alt="Imagen de Certificado" />
-            <h3>Fundamentos de python</h3>
-            <h4>UIS - 2022</h4>
-            <a href="src\assets\certificates\uis-python.jpg">Ver certificado</a>
-          </div>
-
-
-
-          <div className="bg-amber-500">
-            <img src="src\assets\certificates\uis-java.jpg" alt="Imagen de Certificado" />
-            <h3>Programación en Java</h3>
-            <h4>UIS - 2022</h4>
-            <a href="src\assets\certificates\uis-java.jpg">Ver certificado</a>
-          </div>
-
-
-
-
-          <div className="bg-amber-500">
-            <img src="src\assets\certificates\uis-software.jpg" alt="Imagen de Certificado" />
-            <h3>Desarrollo de Software</h3>
-            <h4>UIS - 2022</h4>
-            <a href="src\assets\certificates\uis-software.jpg">Ver certificado</a>
-          </div>
-
-
-
-          <div className="bg-amber-500">
-            <img src="src\assets\certificates\uis-movil.jpg" alt="Imagen de Certificado" />
-            <h3>Desarrollo de App móvil</h3>
-            <h4>UIS - 2022</h4>
-            <a href="src\assets\certificates\uis-movil.jpg">Ver certificado</a>
-          </div>
-
-          
-          <div className="bg-amber-500">
-            <img src="src\assets\certificates\uis-diploma.jpg" alt="Imagen de Certificado" />
-            <h3>Diplomado de Programación </h3>
-            <h4>UIS - 2022</h4>
-            <a href="src\assets\certificates\uis-diploma.jpg">Ver certificado</a>
-          </div>
-
-          
-          <div className="bg-amber-500">
-            <img src="src\assets\certificates\desarrolloweb.jpg" alt="Imagen de Certificado" />
-            <h3>Desarrollo web</h3>
-            <h4>Código Facilito - 2023</h4>
-            <a href="src\assets\certificates\desarrolloweb.jpg">Ver certificado</a>
-          </div>
-
-
-
-          <div className="bg-amber-500">
-            <img src="src\assets\certificates\git.jpg" alt="Imagen de Certificado" />
-            <h3>Curso profesional de Git</h3>
-            <h4>Código Facilito - 2023</h4>
-            <a href="src\assets\certificates\git.jpg">Ver certificado</a>
-          </div>
-
-
-
-          <div className="bg-amber-500">
-            <img src="src\assets\certificates\github.jpg" alt="Imagen de Certificado" />
-            <h3>Curso A fondo de GitHub</h3>
-            <h4>Código Facilito - 2023</h4>
-            <a href="src\assets\certificates\git.jpg">Ver certificado</a>
-          </div>
-
-
-
-          
-          <div className="bg-amber-500">
-            <img src="src\assets\certificates\baseDatos.jpg" alt="Imagen de Certificado" />
-            <h3>Curso Profesional de Base de datos</h3>
-            <h4>Código Facilito - 2023</h4>
-            <a href="src\assets\certificates\baseDatos.jpg">Ver certificado</a>
-          </div>
-
-          <div className="bg-amber-500">
-            <img src="src\assets\certificates\java-facilito.jpg" alt="Imagen de Certificado" />
-            <h3>Curso Profesional de Java</h3>
-            <h4>Código Facilito - 2023</h4>
-            <a href="src\assets\certificates\java-facilito.jpg">Ver certificado</a>
-          </div>
-
-
-          <div className="bg-amber-500">
-            <img src="src\assets\certificates\introProgra.jpg" alt="Imagen de Certificado" />
-            <h3>Introducción a la Programación</h3>
-            <h4>Fundación Telefonica Movistar - 2023</h4>
-            <a href="src\assets\certificates\introProgra.jpg">Ver certificado</a>
-          </div>
-          
-          
-          <div className="bg-amber-500">
-            <img src="src\assets\certificates\class-mirror1.jpg" alt="Imagen de Certificado" />
-            <h3>Clase espejo Interistitucional</h3>
-            <h4>Universidades - 2023</h4>
-            <a href="src\assets\certificates\class-mirror1.jpg">Ver certificado</a>
-          </div>
-
-           
-          <div className="bg-amber-500">
-            <img src="src\assets\certificates\class-mirror2.jpg" alt="Imagen de Certificado" />
-            <h3>Clase espejo Interistitucional</h3>
-            <h4>Universidades - 2023</h4>
-            <a href="src\assets\certificates\class-mirror2.jpg">Ver certificado</a>
-          </div>
-
-          <div className="bg-amber-500">
-            <img src="src\assets\certificates\java-script-facilito.jpg" alt="Imagen de Certificado" />
-            <h3>Curso Profesional de JavaScript</h3>
-            <h4>Código Facilito - 2023</h4>
-            <a href="src\assets\certificates\java-script-facilito.jpg">Ver certificado</a>
-          </div>
-
-
-          <div className="bg-amber-500">
-            <img src="src\assets\certificates\office-basic.jpg" alt="Imagen de Certificado" />
-            <h3>Office Básico</h3>
-            <h4>Fundación Telefonica Movistar - 2023</h4>
-            <a href="src\assets\certificates\office-basic.jpg">Ver certificado</a>
-          </div>
-
-
-        
-          <div className="bg-amber-500">
-            <img src="src\assets\certificates\java-script-dom.jpg" alt="Imagen de Certificado" />
-            <h3>JavaScript y el DOM</h3>
-            <h4>Código Facilito - 2023</h4>
-            <a href="src\assets\certificates\java-script-dom.jpg">Ver certificado</a>
-          </div>
-
-          <div className="bg-amber-500">
-            <img src="src\assets\certificates\js-movistar.jpg" alt="Imagen de Certificado" />
-            <h3>Programación con JavaScript</h3>
-            <h4>Fundación Telefonica Movistar - 2023</h4>
-            <a href="src\assets\certificates\js-movistar.jpg">Ver certificado</a>
-          </div>
-
-          <div className="bg-amber-500">
-            <img src="src\assets\certificates\fun-kotlin-meta.jpg" alt="Imagen de Certificado" />
-            <h3>Fundamentos de Kotlin</h3>
-            <h4>Meta - 2024</h4>
-            <a href="src\assets\certificates\fun-kotlin-meta.jpg">Ver certificado</a>
-          </div>
-
-          <div className="bg-amber-500">
-            <img src="src\assets\certificates\resolver-problem.jpg" alt="Imagen de Certificado" />
-            <h3>Cómo resolver problemas y tomar decisiones</h3>
-            <h4>Universidad de California - 2024</h4>
-            <a href="src\assets\certificates\resolver-problem.jpg">Ver certificado</a>
-          </div>
-
-          <div className="bg-amber-500">
-            <img src="src\assets\certificates\diploma-jetpack-android.jpg" alt="Imagen de Certificado" />
-            <h3>Jetpack Compose En Android</h3>
-            <h4>Platzi - 2024</h4>
-            <a href="src\assets\certificates\diploma-jetpack-android.jpg">Ver certificado</a>
-          </div>
-
-
-          <div className="bg-amber-500">
-            <img src="src\assets\certificates\bootcamp-programing.jpg" alt="Imagen de Certificado" />
-            <h3>Bootcamp de programación</h3>
-            <h4>Talento Tech - 2024</h4>
-            <a href="src\assets\certificates\bootcamp-programing.jpg">Ver certificado</a>
-          </div>
-
-
-          <div className="bg-amber-500">
-            <img src="src\assets\certificates\diploma-dbsql.jpg" alt="Imagen de Certificado" />
-            <h3>Base de datos con SQL</h3>
-            <h4>Platzi - 2025</h4>
-            <a href="src\assets\certificates\diploma-dbsql.jpg">Ver certificado</a>
-          </div>
-
-
-        </div>
+        ))}
       </div>
-    </>
+    </div>
   );
+  
 };
 
 export default Certificate;
