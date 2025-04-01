@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import Profile from './components/profile.tsx'
+import Profile from './components/Profile.tsx'
 import Education from './components/Education.tsx'
 import Certificate from './components/Certificate.tsx'
 
