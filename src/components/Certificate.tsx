@@ -173,20 +173,20 @@ const Certificate = () => {
         {certificates.map((cert, index) => (
           <div
             key={index}
-            className="bg-white rounded-lg shadow-lg p-3 text-center border border-gray-300 transition transform hover:scale-105 hover:bg-[#2C3A58] hover:bg-opacity-90 hover:text-white"
+            className="bg-white rounded-lg shadow-lg p-3 text-center border border-gray-300 transition transform hover:scale-105 hover:bg-[#2C3A58] group hover:bg-opacity-90 hover:text-white"
           >
             <img
               src={cert.img}
               alt={`Certificado de ${cert.title}`}
               className="w-full h-40 object-cover rounded-md"
             />
-            <h3 className="font-semibold mt-2 text-gray-900 hover:text-white">{cert.title}</h3>
-            <h4 className="text-sm text-gray-600 hover:text-white">{cert.issuer}</h4>
+            <h3 className="font-semibold mt-2 text-gray-900 group-hover:text-white">{cert.title}</h3>
+            <h4 className="text-sm text-gray-600 group-hover:text-slate-300">{cert.issuer}</h4>
             <a
               href={cert.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 hover:text-blue-800 underline mt-2 inline-block"
+              className="text-blue-600 hover:text-amber-500 underline mt-2 inline-block group-hover:text-amber-50 "
             >
               Ver certificado
             </a>

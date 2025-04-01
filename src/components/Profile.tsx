@@ -23,7 +23,7 @@ const Profile = () => {
             </svg>
             <span className="text-2xl font-semibold">Home</span>
           </div>
-          <ul className="flex gap-5">
+          <ul className="flex gap-5 items-center">
             {['Habilidades', 'Proyectos', 'Certificados', 'Inicio', 'Educación'].map((item) => (
               <li
                 key={item}
