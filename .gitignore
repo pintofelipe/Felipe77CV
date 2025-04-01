@@ -1,3 +1,6 @@
+# Firebase stuff.
+/.firebase/
+
 # Logs
 logs
 *.log
