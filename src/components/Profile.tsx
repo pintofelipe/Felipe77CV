@@ -3,6 +3,7 @@ import imgPrincipal from "../assets/fonts/img-principal.jpg";
 const Profile = () => {
   return (
     <>
+   
       <header className="bg-[#1E1E2E] text-white">
         {/* Barra de navegación */}
         <nav className="flex justify-between items-center p-5 shadow-lg bg-[#25273D]">
