@@ -8,7 +8,7 @@ import Education from "./components/Education.tsx";
 import Certificate from "./components/Certificate.tsx";
 import Skill from "./components/Skills.tsx";
 import Projects from "./components/Projects.tsx";
-
+import Footer from "./components/Footer.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -23,5 +23,6 @@ createRoot(document.getElementById("root")!).render(
       </Routes>
     </BrowserRouter>
     <Certificate/>
+    <Footer/>
   </StrictMode>
 );
